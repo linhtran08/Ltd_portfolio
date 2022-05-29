@@ -8,6 +8,9 @@ const App = (props) => {
 		<div className="app">
 			<Navbar/>
 			<Header/>
+			<About/>
+			<Work/>
+			<Footer />
 		</div>
 	)
 };

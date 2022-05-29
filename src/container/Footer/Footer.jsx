@@ -3,7 +3,7 @@ import './Footer.scss'
 
 const Footer = (props) => {
 	return (
-		<div>Footer</div>
+		<footer>footer</footer>
 	)
 };
 
