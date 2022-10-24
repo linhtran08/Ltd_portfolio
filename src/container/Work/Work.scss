@@ -45,11 +45,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 
   .app__work-item {
     width: 40%;
     flex-direction: column;
+    justify-content: flex-start;
 
     margin: 2rem;
     padding: 1rem;
