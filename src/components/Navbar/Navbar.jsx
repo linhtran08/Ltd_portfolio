@@ -18,7 +18,7 @@ const useDimensions = ref => {
 
 const sidebar = {
 	open: (height = 1000) => ({
-		clipPath: `circle(${height * 2 + 200}px at 71.2vw 6.5vw)`,
+		clipPath: `circle(${height * 2 + 200}px at 71.2vw 27px)`,
 		transition: {
 			type: "spring",
 			stiffness: 20,
@@ -26,7 +26,7 @@ const sidebar = {
 		}
 	}),
 	closed: {
-		clipPath: "circle(6vw at 71.2vw 6.5vw)",
+		clipPath: "circle(27px at 71.2vw 27px)",
 		transition: {
 			delay: 0.5,
 			type: "spring",
@@ -69,8 +69,8 @@ const Navbar = (props) => {
 							</li>
 						))}
 					</ul>
+					<MenuToggle toggle={() => toggleOpen()} />
 				</motion.div>
-        <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
     </nav>
   );

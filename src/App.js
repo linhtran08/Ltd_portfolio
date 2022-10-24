@@ -10,6 +10,8 @@ const App = (props) => {
 			<Header/>
 			<About/>
 			<Work/>
+			<Skills />
+			<Testimonial />
 			<Footer />
 		</div>
 	)

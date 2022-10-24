@@ -5,6 +5,7 @@ import FadeUp from "../../wrapper/FadeUp";
 import { client, urlFor } from "../../client";
 import AppWrap from "../../wrapper/AppWrap";
 import { AiFillEye, AiFillYoutube } from "react-icons/ai";
+import {MotionWrap} from "../../wrapper";
 
 const Work = (props) => {
   useEffect(() => {
@@ -42,7 +43,7 @@ const Work = (props) => {
         My Creative <span>Project</span>
       </FadeUp>
       <div className="app__work-filter">
-        {["Web App", "ReactJS", "Design", "All"].map((item, index) => (
+        {["Wordpress", "ReactJS", "Design", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -110,4 +111,4 @@ const Work = (props) => {
   );
 };
 
-export default AppWrap(Work, "work");
+export default AppWrap(MotionWrap(Work,'app__works'), "work",'app__primarybg');
