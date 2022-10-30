@@ -43,7 +43,7 @@ const Work = (props) => {
         My Creative <span>Project</span>
       </FadeUp>
       <div className="app__work-filter">
-        {["Wordpress", "ReactJS", "Design", "All"].map((item, index) => (
+        {["Wordpress", "ReactJS", "Mobile", "Design", "All"].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
